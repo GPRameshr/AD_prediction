@@ -79,9 +79,9 @@ for N1=1:length(Data1_)
         opts.mode = 'nh';
         opts.t = 11;
         %Local Binary pattern
-        Local_BP_(N1)=desc_LbeP(Seg_E,opts);
+        Local_BP_{N1}=desc_LbeP(Seg_E,opts);
         %Local Directional Pattern
-        Local_DP_(N1)=desc_LbeP(Seg_E,opts);
+        Local_DP_{N1}=desc_LbeP(Seg_E,opts);
         Features=[Features;Local_BP_,Local_DP_];
     end
 end
